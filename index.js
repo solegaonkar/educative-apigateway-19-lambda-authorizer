@@ -9,9 +9,9 @@ exports.handler = async (event) => {
 
   if (event.authorizationToken === event.authorizationToken) {
     policy.policyDocument.Statement.push({
-      Action: "*",
+      Action: "execute-api:Invoke",
       Effect: "Allow",
-      Resource: "*",
+      Resource: event.methodArn,
     });
   }
   return policy;
