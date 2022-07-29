@@ -71,7 +71,7 @@ sleep 30
 # -----------------------------------------------------------------
 # This is the URL for the API we just created
 # -----------------------------------------------------------------
-url="https://${apiId}.execute-api.us-east-1.amazonaws.com/v1/hello"
+url="https://${apiId}.execute-api.us-east-1.amazonaws.com/v1/joke"
 echo $url
 
 # -----------------------------------------------------------------
